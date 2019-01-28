@@ -38,8 +38,8 @@ read DOSETUPTWO
 if [[ $DOSETUPTWO =~ "y" ]] ; then
 
 beacon-cli stop > /dev/null 2>&1
-wget https://github.com/beaconcrypto/beacon/releases/download/v1.1/becn11-daemon.zip 
-unzip becn11-daemon.zip
+wget https://github.com/beaconcrypto/beacon/releases/download/v1.1.2.0-release/ubuntu-16.04.zip
+unzip ubuntu-16.04.zip
 cp beacond /usr/local/bin/beacond
 cp beacon-cli /usr/local/bin/beacon-cli
 chmod +x /usr/local/bin/beacon*
